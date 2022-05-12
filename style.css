@@ -28,7 +28,7 @@ body {
 }
 
 .content .scores .record { /* other children under .scores will expand as well */
-    padding-right: 250px;
+    padding-right: 200px;
 }
 
 .content .record {

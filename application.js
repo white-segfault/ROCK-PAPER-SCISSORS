@@ -1,6 +1,7 @@
 const options = ["paper", "scissors", "rock"];
 let computer_wins = 0;
 let player_wins = 0;
+let tied = 0;
 
 let currentNumGames = 1;
 let maxNumGames = 5;
@@ -41,6 +42,7 @@ function announce_result() {
 function update_gui(roundResult) {
   playerScores.textContent = "Player: " + player_wins;
   computerScores.textContent = "Computer: " + computer_wins;
+  tiedScores.textContent = "Tied: " + tied;
   currentResult.textContent = roundResult;
 
   if (currentNumGames >= maxNumGames) {
@@ -61,6 +63,7 @@ function play_round(playerSelection, e) {
   if (playerSelection === computerSelection) {
     console.log("Even round. You and computer both had "+ playerSelection);
     roundResult = "Even round."
+    tied += 1;
     update_gui(roundResult);
     currentNumGames += 1;
     e.stopPropagation(); // stops any bubbling things
@@ -119,6 +122,7 @@ btns.forEach((button) => {
 
 const playerScores = document.querySelector(".record > .player");
 const computerScores = document.querySelector(".record > .computer");
+const tiedScores = document.querySelector(".record > .tied");
 const currentResult = document.querySelector(".scores > .round_result");
 const playerPrompt = document.querySelector(".player_play > .prompt");
 
