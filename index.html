@@ -3,11 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
-  <script src="application.js"></script>
+  <script src="application.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>
-  </script>
+  <div class="header">
+    Game: Paper Scissors Rock
+  </div>
+
+  <div class="content">
+    <div class="scores">
+      <div class="title">
+        Scores:
+      </div>
+      <div class="record">
+        <div class="player">
+          player: 0
+        </div>
+        <div class="computer">
+          computer: 0
+        </div>
+        <div class="tied">
+          Tied: 0
+        </div>
+      </div>
+      <div class="round_result">
+        Start your game!
+      </div>
+    </div>
+
+    <div class="player_play">
+      <div class="prompt">
+        Make your move:
+      </div>
+
+      <div class="options">
+
+        <div class="move">
+          <img src="./paper.png" alt="">
+          <button id="paper">Paper</button>
+        </div>
+
+        <div class="move">
+          <img src="./scissors.png" alt="">
+          <button id="scissors">Scissors</button>
+        </div>
+
+        <div class="move">
+          <img src="./rock.png" alt="">
+          <button id="rock">Rock</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="text">
+      © Paper Scissors Rock
+    </div>
+  </div>
+
 </body>
 </html>

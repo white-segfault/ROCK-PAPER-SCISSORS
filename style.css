@@ -1,0 +1,77 @@
+body {
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    align-self: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.content .scores {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /*padding-right: 250px;*/
+}
+
+.content .scores .record { /* other children under .scores will expand as well */
+    padding-right: 200px;
+}
+
+.content .record {
+    display: flex;
+    gap: 10px;
+}
+
+
+.content .player_play {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content .player_play .title {
+    padding-right: 195px;
+}
+
+.content .player_play .options {
+    display: flex;
+    gap: 20px;
+}
+
+.content .player_play .move {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content .player_play img {
+    height: 100px;
+    width: 100px;
+}
+
+.content .player_play button {
+    border-radius: 8px;
+    background: #eee;
+}
+
+.footer {
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+
+
+
