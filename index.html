@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
-<!--  <script src="application.js"> defer </script>-->
+  <script src="application.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,31 +24,31 @@
           computer: 0
         </div>
       </div>
-      <div class="current_result">
+      <div class="round_result">
         Start your game!
       </div>
     </div>
 
     <div class="player_play">
-      <div class="title">
-        Make your first move.
+      <div class="prompt">
+        Make your move:
       </div>
 
       <div class="options">
 
         <div class="move">
           <img src="./paper.png" alt="">
-          <button>Paper</button>
+          <button id="paper">Paper</button>
         </div>
 
         <div class="move">
           <img src="./scissors.png" alt="">
-          <button>Scissors</button>
+          <button id="scissors">Scissors</button>
         </div>
 
         <div class="move">
           <img src="./rock.png" alt="">
-          <button>Rock</button>
+          <button id="rock">Rock</button>
         </div>
       </div>
 
@@ -63,4 +63,5 @@
   </div>
 
 </body>
+
 </html>

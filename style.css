@@ -22,9 +22,13 @@ body {
 
 .content .scores {
     display: flex;
-    padding-right: 250px;
     flex-direction: column;
     gap: 5px;
+    /*padding-right: 250px;*/
+}
+
+.content .scores .record { /* other children under .scores will expand as well */
+    padding-right: 250px;
 }
 
 .content .record {
